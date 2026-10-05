@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Surfaces and text */
+  --color-surface: #f6f3f0;
+  --color-ink: #2b2624;
+  --color-ink-soft: #5e5652;
+  --color-ink-muted: #6f6662;
+  --color-on-dark: #cfc6c1;
+
+  /* Brand */
+  --color-primary: #9a5763;
+  --color-primary-hover: #7f4551;
+  --color-link-hover: #8e4e58;
+
+  /* Lines */
+  --color-line: #e4ddd8;
+  --color-divider: #ece6e2;
+
+  /* Image placeholder tints */
+  --color-tint-blush: #e9ded8;
+  --color-tint-rose: #ebdadb;
+  --color-tint-sand: #ede4da;
+  --color-tint-sage: #e2e3da;
+
+  /* States (for later) */
+  --color-success: #5f7360;
+  --color-error: #a3412f;
+  --color-warning: #9a6b1f;
+
+  /* Page width */
+  --container-page: 1240px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-dm-sans);
 }
