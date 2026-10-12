@@ -30,8 +30,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${cormorant.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <Header />
       <body className="flex min-h-full flex-col bg-surface font-sans text-ink">
+        <Header />
         {children}
       </body>
     </html>
