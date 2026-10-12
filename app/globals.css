@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Surfaces and text */
+  /* Surfaces */
   --color-surface: #f6f3f0;
+
+  /* Text */
   --color-ink: #2b2624;
   --color-ink-soft: #5e5652;
   --color-ink-muted: #6f6662;
   --color-on-dark: #cfc6c1;
+  --color-placeholder: #8a7d77;
 
   /* Brand */
   --color-primary: #9a5763;
@@ -21,14 +24,24 @@
   --color-tint-blush: #e9ded8;
   --color-tint-rose: #ebdadb;
   --color-tint-sand: #ede4da;
+  --color-tint-petal: #efe3de;
   --color-tint-sage: #e2e3da;
+  --color-tint-stone: #e4e1dc;
 
-  /* States (for later) */
+  /* States */
   --color-success: #5f7360;
   --color-error: #a3412f;
   --color-warning: #9a6b1f;
 
-  /* Page width */
+  /* Type scale */
+  --text-display: 4.75rem;
+  --text-display--line-height: 1.02;
+  --text-heading: 2.75rem;
+  --text-heading--line-height: 1.15;
+  --text-eyebrow: 0.8125rem;
+  --text-eyebrow--letter-spacing: 0.2em;
+
+  /* Layout */
   --container-page: 1240px;
 }
 
